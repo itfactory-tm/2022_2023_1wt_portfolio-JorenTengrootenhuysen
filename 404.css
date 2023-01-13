@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Martian mono', monospace, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+body {
+    text-align: center;
+    background-image: url("/Afbeeldingen/Wauwel_Logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+}
+h1,h2,p {
+    color: red;
+}
+h1 {
+    font-size: 12rem;
+}
+h2 {
+    font-size: 8rem;
+}
+img {
+    width: 500px;
+    height: auto;
+}
+
+@media (min-width: 400px){
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
