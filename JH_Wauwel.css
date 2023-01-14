@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +8,13 @@
 }
 
 html {
-    font-family: 'Martian mono', monospace, sans-serif;
+    font-family: 'Catamaran', monospace, sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     /*background-color: #3a5a40;*/
     /*background-color: white;*/
-    background: linear-gradient(180deg, rgba(218,215,205,1) 0%, rgba(163,177,138,1) 80%, rgba(88,129,87,1) 100%);
+    background: linear-gradient(180deg, rgba(217,216,215,1) 45%, rgba(107,127,242,1) 90%, rgba(38,38,38,1) 100%);
 }
 
 body {
@@ -23,42 +23,42 @@ body {
     margin: 1rem;
     border-radius: 10px;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.75);
-    background-color: #DAD7CD;
+    background-color: #D9D8D7;
 }
 
 header {
     text-align: center;
     margin: 0;
     padding-top: 1rem;
-    background-color: #588157;
-    border: 0 solid #164A41;
     transform: translateY(-10px);
     border-radius: 0 0 10px 10px;
+    background-color: #262626;
 }
 
 h1 {
-    color: #DAD7CD;
+    color: #D9D8D7;
     margin-bottom: 1rem;
     padding: 0.9rem;
 }
 
 p {
-    color: #494949;
+    padding: 1rem 2rem 1rem 2rem;
     font-weight: bold;
+    color: #0d0d0d;
 }
 .textnav {
     display: none;
 }
 
 .navbar {
-    background-color: #a3b18a;
     border-radius: 10px;
     padding: 0.75rem;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.75);
     position: sticky;
-    top: -10px;
+    top: -8px;
     margin-top: 0;
     z-index: 100;
+    background-color: #6B7FF2;
 }
 .child1 {
     display: flex;
@@ -69,7 +69,7 @@ p {
     list-style: none;
 }
 .navli {
-    color: white;
+    color: #D9D8D7;
     font-weight: bold;
     margin: 0.3rem;
 }
@@ -77,10 +77,6 @@ p {
 a {
     text-decoration: none;
     color: black;
-}
-
-a:visited {
-    color: #011936;
 }
 
 a:active {
@@ -94,6 +90,7 @@ h3 {
     text-decoration: underline;
 }
 h2, h3, h4 {
+    padding: 0 3rem 0 3rem;
     color: #465362;
 }
 
@@ -153,19 +150,19 @@ figcaption {
     flex-wrap: wrap;
     margin: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.75);
+    /*box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.75);*/
 }
 div img {
     width: 100px;
     height: auto;
-    border-radius: 30%;
+    border-radius: 10%;
 }
 .beschrijving {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #a3b18a;
+    background-color: white;
     border-radius: 10px 10px 0 0;
 }
 .titel {
@@ -173,14 +170,20 @@ div img {
     margin: 10px
 }
 .gegevens {
-    border-top: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #588157 ;
+    background-color: #6B7FF2 ;
     border-radius: 0 0 10px 10px;
 }
-
+.parpersoon {
+    padding: 0.15rem;
+    margin: 0.25rem;
+}
+.persoonfoto {
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
 /* -------------------------------------------------*/
 /*footer*/
 footer img {
@@ -194,20 +197,42 @@ footer img {
 .divtabel {
     display: flex;
     flex-direction: row;
-    align-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
 }
 
 table {
     border-collapse: collapse;
-    border: 2px solid black;
+    border: 2px solid #a3b18a;
+    font-size: 10px;
 }
-
+tr {
+    text-align: center;
+}
+td {
+    padding: 0.5rem;
+}
 .tabelhoofd {
-    background-color: gray;
+    background-color: #a3b18a;
 }
 
-@media (min-width: 650px){
+
+@media (min-width: 620px){
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
     .Bier_vd_maand {
         display: flex;
         flex-wrap: nowrap;
@@ -220,14 +245,26 @@ table {
         width: auto;
         height: 400px;
     }
+    .navbar {
+        border-radius: 0 0 10px 10px;
+        top: 0;
+    }
     .textnav {
     display: inline-block;
+    }
+    .child1 {
+        flex-grow: 1;
     }
     .navlink:hover {
         transform: scale(1.1);
         transition-duration: 0.7s;
         padding: 0.5rem;
-        background-color: #DAD7CD;
+        background-color: #D9D8D7;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    }
+    .navlink:active {
+        background-color: #D9D8D7;
         border-radius: 10px;
     }
     .navlink {
@@ -246,14 +283,15 @@ table {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        align-content: space-around;
         margin: 2rem;
-        box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.75);
         max-width: 600px;
         opacity: 80%;
-        transform: scale(0.9);
+        transform: scale(0.95);
         transition-duration: 0.3s;
     }
     .persoon:hover{
+        box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.75);
         transform: scale(1);
         opacity: 100%;
         transition-duration: 0.5s;
@@ -261,7 +299,7 @@ table {
     div img {
         width: 100px;
         height: auto;
-        border-radius: 50%;
+        border-radius: 10%;
 
     }
     .beschrijving {
@@ -271,20 +309,35 @@ table {
         justify-content: center;
         flex-grow: 0.5;
         padding: 5px;
-        background-color: #a3b18a;
+        background-color: white;
         border-radius: 10px 10px 0 0;
     }
     .titel {
         flex-grow: 0.5;
-        margin: 10px;
+        margin: 1rem;
 
     }
     .gegevens {
-        background-color: #588157;
+        background-color: #6B7FF2;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
         border-radius: 0 0 10px 10px;
+        padding: 7px;
+        box-shadow: 0px -20px 40px -10px rgba(107,127,242,1);
+    }
+    .parpersoon {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    table {
+        font-size: 1rem;
     }
 }
