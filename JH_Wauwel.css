@@ -444,3 +444,15 @@ td {
         width: 250px;
     }
 }
+
+@media print {
+    img {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    figure {
+        display: none;
+    }
+}

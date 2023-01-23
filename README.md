@@ -8,7 +8,7 @@
 
 | Student         | Info                                                             |
 |:----------------|:-----------------------------------------------------------------|
-| Name            | ...                                                              |
+| Name            | Tengrootenhuysen Joren                                           |
 | email           | [john.doe@example.com](mailto:john.doe@example.com)              |
 | Github Username | ...                                                              |
 | Hosting         | [https://jhdewauwel.netlify.app](https://jhdewauwel.netlify.app) |
