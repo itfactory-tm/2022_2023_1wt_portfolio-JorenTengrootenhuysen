@@ -258,6 +258,16 @@ td {
     width: 300px;
     box-shadow: 7px 7px 7px 0 rgba(0, 0, 0, 0.5);
 }
+/*------------------------------------------------------------------------------------------------*/
+/* CONTACT PAGINA*/
+.djbooth {
+    margin: 0;
+    width: 100%;
+}
+.imgfooterboot {
+    width: 200px;
+}
+
 
 @media (min-width: 620px) {
     h1 {
@@ -422,6 +432,10 @@ td {
     .biertjes {
         width: 150px;
 
+    }
+    .djbooth {
+        margin: 2rem;
+        width: border-box;
     }
 }
 
