@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: 'Catamaran','Montserrat', sans-serif;
+    font-family: 'Catamaran', 'Montserrat', sans-serif;
     background-color: #D9D8D7;
     background-image: url('Afbeeldingen/errorpage.jpg');
     background-position: center;
@@ -28,27 +28,27 @@ body {
     justify-content: center;
     text-align: center;
 }
+
 main {
     display: inline-block;
-    background-color: #6B7FF2;
+    background-color: #D9D8D7;
     border-radius: 10px;
+    box-shadow: inset 0 0 15px 10px rgba(0,0,0,0.5);
 }
+
 h1 {
     color: #6B7FF2;
     font-size: 6rem;
     font-weight: 200;
     margin: 2rem;
-    background-color: #D9D8D7;
-
 }
 
 h2 {
     font-size: .8rem;
     font-weight: 400;
     display: inline-block;
-    border-radius: 10px 10px 0 0 ;
+    border-radius: 10px 10px 0 0;
     padding: .5rem;
-    background-color: #D9D8D7;
 }
 
 @media screen and (min-width: 480px) {
