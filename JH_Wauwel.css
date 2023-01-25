@@ -267,6 +267,9 @@ td {
 .imgfooterboot {
     width: 200px;
 }
+.contact {
+    margin: 1rem;
+}
 
 
 @media (min-width: 620px) {
@@ -446,6 +449,10 @@ td {
 }
 
 @media print {
+    body {
+        margin: 0;
+        box-shadow: none;
+    }
     img {
         display: none;
     }

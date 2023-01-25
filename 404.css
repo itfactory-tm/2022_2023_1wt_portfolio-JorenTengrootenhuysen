@@ -34,10 +34,12 @@ main {
     border-radius: 10px;
 }
 h1 {
-    color: #D9D8D7;
+    color: #6B7FF2;
     font-size: 6rem;
     font-weight: 200;
     margin: 2rem;
+    background-color: #D9D8D7;
+
 }
 
 h2 {
